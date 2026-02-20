@@ -44,3 +44,211 @@ body {
   overflow-x: hidden;
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
 }
+/* <------------------------Table Css-------------------------------> */
+
+.patient-table-container {
+  padding: 30px;
+  background-color: #f4f6f9;
+  min-height: 100vh;
+}
+
+.custom-table {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.custom-head {
+  background: linear-gradient(90deg, #0d6efd, #4e73df);
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 15px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.custom-table tbody tr {
+  transition: all 0.3s ease;
+}
+
+.custom-table tbody tr:hover {
+  background-color: #e9f2ff;
+  /* transform: scale(1.01); */
+}
+
+.custom-table th {
+  font-weight: 600;
+}
+
+.custom-table td {
+  font-size: 14px;
+  color: #555;
+}
+/* <-------------------------> */
+.logout-link {
+  text-decoration: none;
+  color: white;
+  padding: 8px 15px;
+  background-color: #dc3545;
+  border-radius: 6px;
+}
+
+/* <--------------------------------------Login Form css--------------------------> */
+
+.login-image {
+  position: relative;
+  background: url("https://images.unsplash.com/photo-1587351021759-3e566b6af7cc")
+    no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* Green overlay */
+.login-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(25, 135, 84, 0.6);
+}
+
+/* Text */
+.image-overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  width: 80%;
+}
+
+.image-overlay-text h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.image-overlay-text p {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+/* Login Box */
+.login-box {
+  width: 350px;
+}/* Animated Button */
+.animated-btn {
+  position: relative;
+  font-weight: 600;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.animated-btn .arrow {
+  margin-left: 8px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.animated-btn:hover .arrow {
+  transform: translateX(6px);
+}
+
+/* <-------------------------------------------Update Login Form--------------------> */
+/* MAIN CARD */
+.auth-card {
+  width: 480px;
+  background: #ffffff;
+  padding: 45px 40px;
+  border-radius: 18px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Hover Lift Effect */
+.auth-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
+}
+
+/* TITLE */
+.auth-title {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #198754;
+  letter-spacing: 0.5px;
+}
+
+/* SUBTITLE */
+.auth-subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 30px;
+}
+
+/* INPUT DESIGN */
+.form-control {
+  height: 48px;
+  border-radius: 10px;
+  border: 1px solid #dee2e6;
+  padding-left: 15px;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.form-control:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.15rem rgba(25, 135, 84, 0.25);
+}
+
+/* BUTTON */
+.animated-btn {
+  height: 48px;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Arrow animation */
+.animated-btn .arrow {
+  margin-left: 8px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.animated-btn:hover .arrow {
+  transform: translateX(6px);
+}
+
+/* Button Hover */
+.animated-btn:hover {
+  box-shadow: 0 10px 25px rgba(25, 135, 84, 0.35);
+  transform: translateY(-2px);
+}
+
+/* LINKS */
+.auth-link {
+  color: #198754;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}

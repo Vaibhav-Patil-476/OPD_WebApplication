@@ -9,25 +9,37 @@ function SideBar() {
                 <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
                     <div class="position-sticky">
                         <div class="list-group list-group-flush mx-3 mt-4">
-                            <Link to ={"/"} 
-                                class="list-group-item list-group-item-action py-2 ripple"
+                            <Link
+                                to={"/"}
+                                className="list-group-item list-group-item-action py-2 ripple"
                                 aria-current="true"
-                            > 
-                                <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Dashboard</span>
+                            >
+                                <i className="fas fa-tachometer-alt fa-fw me-3"></i>
+                                <span>Dashboard</span>
                             </Link>
-                            <Link to ={"/patient"} class="list-group-item list-group-item-action py-2 ripple"
-                            ><i class="fas fa-users fa-fw me-3"></i><span>Patient</span></Link>
-                            <Link to={"/reception"} class="list-group-item list-group-item-action py-2 ripple">
-                            <i class="fas fa-money-bill fa-fw me-3"></i><span>Reception</span>
+                            <Link
+                                to={"/patient"}
+                                className="list-group-item list-group-item-action py-2 ripple"
+                            >
+                                <i className="fas fa-users fa-fw me-3"></i>
+                                <span>Patient</span>
                             </Link>
-                            
+
+                            <Link
+                                to={"/reception"}
+                                className="list-group-item list-group-item-action py-2 ripple"
+                            >
+                                <i className="fas fa-money-bill fa-fw me-3"></i>
+                                <span>Reception</span>
+                            </Link>
+
                         </div>
                     </div>
                 </nav>
                 {/* <!-- Sidebar --> */}
 
                 {/* <!-- Navbar --> */}
-                <nav id="main-navbar" class="navbar navbar-expand-lg bg-info fixed-top">
+                <nav id="main-navbar" class="navbar navbar-expand-lg bg-light fixed-top">
                     {/* <!-- Container wrapper --> */}
                     <div class="container-fluid">
                         {/* <!-- Toggle button --> */}
@@ -45,12 +57,12 @@ function SideBar() {
 
                         {/* <!-- Brand --> */}
                         <a class="navbar-brand" href="#">
-                           
+
                         </a>
                         {/* <!-- Search form --> */}
-                                    <li>
-                                        <a class="dropdown-item" href="#">Logout</a>
-                                    </li>
+                        <Link to="/Login" className="logout-link">
+                            Logout
+                        </Link>
 
                     </div>
                     {/* <!-- Container wrapper --> */}
@@ -60,7 +72,7 @@ function SideBar() {
             {/* <!--Main Navigation--> */}
 
             {/* <!--Main layout--> */}
-            <main style={{marginTop: "58px"}}>
+            <main style={{ marginTop: "58px" }}>
                 <div class="container pt-4"></div>
             </main>
             {/* <!--Main layout--> */}

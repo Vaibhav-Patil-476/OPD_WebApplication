@@ -1,0 +1,44 @@
+.patient-table-container {
+  padding: 30px;
+  background-color: #f4f6f9;
+  min-height: 100vh;
+}
+
+.custom-table {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.custom-head {
+  background: linear-gradient(90deg, #0d6efd, #4e73df);
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 15px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.custom-table tbody tr {
+  transition: all 0.3s ease;
+}
+
+.custom-table tbody tr:hover {
+  background-color: #e9f2ff;
+  transform: scale(1.01);
+}
+
+.custom-table th {
+  font-weight: 600;
+}
+
+.custom-table td {
+  font-size: 14px;
+  color: #555;
+}

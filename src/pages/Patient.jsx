@@ -11,7 +11,7 @@ import {
 function Patient() {
   return (
     <div className="reception-container">
-      <h2 className="page-title">Reception Dashboard</h2>
+      <h1 className="page-title">Reception</h1>
 
       <MDBTable className="custom-table" hover bordered>
         <MDBTableHead className="custom-head">
